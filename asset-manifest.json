@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/TextUtills/static/css/main.2cb54508.css",
-    "main.js": "/TextUtills/static/js/main.f1f357a3.js",
-    "static/js/453.06c464ff.chunk.js": "/TextUtills/static/js/453.06c464ff.chunk.js",
-    "index.html": "/TextUtills/index.html",
-    "main.2cb54508.css.map": "/TextUtills/static/css/main.2cb54508.css.map",
-    "main.f1f357a3.js.map": "/TextUtills/static/js/main.f1f357a3.js.map",
-    "453.06c464ff.chunk.js.map": "/TextUtills/static/js/453.06c464ff.chunk.js.map"
+    "main.css": " https://abdulCodeSnip.github.io/TextUtills/static/css/main.2cb54508.css",
+    "main.js": " https://abdulCodeSnip.github.io/TextUtills/static/js/main.e8ebfee0.js",
+    "static/js/453.06c464ff.chunk.js": " https://abdulCodeSnip.github.io/TextUtills/static/js/453.06c464ff.chunk.js",
+    "index.html": " https://abdulCodeSnip.github.io/TextUtills/index.html",
+    "main.2cb54508.css.map": " https://abdulCodeSnip.github.io/TextUtills/static/css/main.2cb54508.css.map",
+    "main.e8ebfee0.js.map": " https://abdulCodeSnip.github.io/TextUtills/static/js/main.e8ebfee0.js.map",
+    "453.06c464ff.chunk.js.map": " https://abdulCodeSnip.github.io/TextUtills/static/js/453.06c464ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2cb54508.css",
-    "static/js/main.f1f357a3.js"
+    "static/js/main.e8ebfee0.js"
   ]
 }
