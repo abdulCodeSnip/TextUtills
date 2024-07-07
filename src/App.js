@@ -4,9 +4,8 @@ import NavBar from "./Components/NavBar";
 import TextForms from "./Components/TextForms";
 import About from "./Components/About";
 import React, { useState } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -52,27 +51,36 @@ function App() {
     }
   };
 
-  const router = createBrowserRouter([
-    {
-      path : '/about',
-      element : <><NavBar title = "TextUtils" mode = {mode} aboutText="About Us" services="Our Services" toggleMode={toggleMode} changeColor = {changeColor}/><About mode={mode}/></>
-    },
+  // const router = createBrowserRouter([
+  //   {
+  //     path : '/about',
+  //     element : <><NavBar title = "TextUtils" mode = {mode} aboutText="About Us" services="Our Services" toggleMode={toggleMode} changeColor = {changeColor}/><About mode={mode}/></>
+  //   },
 
-    {
-      path : '/',
-      element : <><NavBar title = "TextUtils" mode ={mode} aboutText="About Us" services="Our Services" toggleMode={toggleMode} changeColor = {changeColor}/>
-      <div className="container my-5">
+  //   {
+  //     path : '/',
+  //     element : <><NavBar title = "TextUtils" mode ={mode} aboutText="About Us" services="Our Services" toggleMode={toggleMode} changeColor = {changeColor}/>
+  //     <div className="container my-5">
+  //     <TextForms heading="Enter text Here"
+  //     mode={mode}
+  //     toggleMode={toggleMode}
+  //     showAlert={showAlert}
+  //     changeColor={changeColor}/></div></>
+  //   }
+
+  // ])
+  return (
+    <>
+    {/* <RouterProvider router={router}/> */}
+    <NavBar title = "TextUtils" mode = {mode} aboutText="About Us" services="Our Services" toggleMode={toggleMode} changeColor = {changeColor}/>
+
+    <div className="container my-5">
       <TextForms heading="Enter text Here"
       mode={mode}
       toggleMode={toggleMode}
       showAlert={showAlert}
-      changeColor={changeColor}/></div></>
-    }
-
-  ])
-  return (
-    <>
-    <RouterProvider router={router}/>
+      changeColor={changeColor}/></div>
+    <About mode={mode}/>
     </>
   );
 }

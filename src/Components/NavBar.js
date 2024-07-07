@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 
 export default function NavBar(props) {
   return (
@@ -7,9 +7,9 @@ export default function NavBar(props) {
     <nav
       className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
       <div className="container-fluid">
-        <Link className={`navbar-brand text-${props.mode === 'dark' || props.mode === 'success' ? 'light' : 'dark'}`} to="/">
+        <a className={`navbar-brand text-${props.mode === 'dark' || props.mode === 'success' ? 'light' : 'dark'}`} href="#">
           {props.title}
-        </Link>
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -24,19 +24,28 @@ export default function NavBar(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className={`nav-link active text-${props.mode === 'dark' || props.mode === 'success' ? 'light' : 'dark'}`} aria-current="page" to="/">
+              <a className={`nav-link active text-${props.mode === 'dark' || props.mode === 'success' ? 'light' : 'dark'}`} aria-current="page" href="#">
                 Home
-              </Link>
+              </a>
+              {/* <Link className={`nav-link active text-${props.mode === 'dark' || props.mode === 'success' ? 'light' : 'dark'}`} aria-current="page" to="/">
+                Home
+              </Link> */}
             </li>
             <li className="nav-item">
-              <Link className={`nav-link text-${props.mode === 'dark' || props.mode === 'success' ? 'light' : 'dark'}`} to="/about">
+
+              {/* <Link className={`nav-link text-${props.mode === 'dark' || props.mode === 'success' ? 'light' : 'dark'}`} to="/about">
                 {props.aboutText}
-              </Link>
+              </Link> */}
+
             </li>
             <li className={`nav-item`}>
-              <Link to="/services" className={`nav-link text-${props.mode === 'dark' || props.mode === 'success' ? 'light' : 'dark'}`}>
+              <a href="#" className={`nav-link text-${props.mode === 'dark' || props.mode === 'success' ? 'light' : 'dark'}`}>
                 {props.services}
-              </Link>
+              </a>
+
+              {/* <Link to="/services" className={`nav-link text-${props.mode === 'dark' || props.mode === 'success' ? 'light' : 'dark'}`}>
+                {props.services}
+              </Link> */}
             </li>
           </ul>
           <form className="d-flex" role="search">
@@ -74,6 +83,7 @@ export default function NavBar(props) {
     </nav>
     </>
   );
+
 }
 
 // Navbar.propTypes = {
